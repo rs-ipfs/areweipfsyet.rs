@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Are we IPFS yet?</title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <nav>
+        <a href="https://github.com/rs-ipfs/areweipfsyet.rs">
+          <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" />
+        </a>
+      </nav>
+
+      <img src="./img/rust-ipfs-crab.png" alt="The Rust IPFS Crab" />
+      <h1>Are we IPFS yet?</h1>
+
+      <h3>
+        ...kinda, yeah! The foundations are there, but there's
+        still a lot of fine-tuning and advanced features to
+        implement.
+      </h3>
+    </header>
+
+    <section role="main">
+      <h2>Where are we at?</h2>
+      <p>
+        The following table details how far along Rust IPFS is in
+        their implementation. For other projects, see the README.md
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>IPFS</th>
+            <th>HTTP</th>
+            <th>Conformance Tests</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="complete">
+            <td>Pubsub</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>25/25 tests passing</td>
+          </tr>
+          <tr class="complete">
+            <td>Swarm</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>13/13 tests passing</td>
+          </tr>
+          <tr class="complete">
+            <td>Refs</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>21/21 tests passing</td>
+          </tr>
+          <tr class="complete">
+            <td>Bitswap</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>9/9 tests passing</td>
+          </tr>
+          <tr class="complete">
+            <td>Cat</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>14/14 tests passing</td>
+          </tr>
+          <tr class="complete">
+            <td>Get</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>9/9 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Add</td>
+            <td>Single Block</td>
+            <td>Yes</td>
+            <td>9/30 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Pin</td>
+            <td>Yes</td>
+            <td>In PR</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Version</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>1/2 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>ID</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>1/2 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Block</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>25/27 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Dag</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>25/32 tests passing</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Remaining Work</h2>
+      <p>
+        The table below details the features that still need attention.
+        This is a great opportunity for contributors who want to make
+        a difference. TODO: Wordsmith
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>IPFS</th>
+            <th>HTTP</th>
+            <th>Conformance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bootstrap</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr>
+            <td>DHT</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr>
+            <td>Ping</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr>
+            <td>Key</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr>
+            <td>Config</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr>
+            <td>Stats</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+          <tr>
+            <td>Files</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>TODO: List ecosystem projects here</li>
+      </ul>
+    </section>
+
+    <footer role="contentinfo">
+      <span>Copyright © 2020 <a href="https://equilibrium.co">Equilibrium</a></span>
+      <span>Rust IPFS crab by <a href="http://helminen.co/">Jouni Helminen</a></span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+  --value1: #f7f7f7;
+  --value1a: #f0f0f0;
+  --value2: #e8e8e8;
+  --value2a: #d6d6d6;
+
+  --value3: #a1a1a1;
+  --value4: #868686;
+  --value5: #7d7d7d;
+  --value6: #282828;
+
+  --green1: #D4F4D5;
+  --green2: #98EEA5;
+
+  --yellow1: #FFF3ED;
+  --yellow2: #FBE8BC;
+  }
+
+/* Fonts */
+
+@font-face {
+  font-family: "Cabin";
+  src: url("./fonts/Cabin-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cabin";
+  src: url("./fonts/Cabin-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/* TODO: Figure out why Firefox thinks it's always night
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: invert(1) hue-rotate(180deg);
+    background: black;
+  }
+}
+*/
+
+body {
+  font-family: "Cabin", sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+body > header {
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid var(--value2);
+  position: relative;
+}
+body > header > h3 {
+  max-width: 36rem;
+}
+
+body > header > nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body > header > nav a {
+  opacity: 0.19 /* aiming for #d6d6d6 from black */
+}
+body > header > nav a:hover {
+  opacity: 1;
+}
+
+header > img {
+  float: left;
+  margin-right: 2rem;
+  width: 80px;
+}
+
+body > section { clear: left; margin-bottom: 2rem; }
+
+section > table { width: 100%; }
+
+table td, table th { padding: 4px; }
+thead th {
+  text-align: left;
+}
+tbody tr:nth-child(odd) { background-color: var(--value1) }
+tbody tr:nth-child(even) { background-color: var(--value2) }
+tbody tr.complete:nth-child(odd) { background-color: var(--green1) }
+tbody tr.complete:nth-child(even) { background-color: var(--green2) }
+tbody tr.partial:nth-child(odd) { background-color: var(--yellow1) }
+tbody tr.partial:nth-child(even) { background-color: var(--yellow2) }
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--value2);
+  padding: 1rem 0;
+}
+footer a { color: black; }
