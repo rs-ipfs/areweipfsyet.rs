@@ -72,6 +72,12 @@ header > img {
   width: 80px;
 }
 
+@media (max-width: 600px) {
+  header > h1 { font-size: 1.5rem; }
+  header > img { width: 50px; margin-right: 1rem;}
+  header > h3 { font-size: 1rem; margin-left: calc(50px + 1rem); }
+}
+
 body > section { clear: left; margin-bottom: 2rem; }
 
 section > table { width: 100%; }
@@ -86,7 +92,6 @@ tbody tr.complete:nth-child(odd) { background-color: var(--green1) }
 tbody tr.complete:nth-child(even) { background-color: var(--green2) }
 tbody tr.partial:nth-child(odd) { background-color: var(--yellow1) }
 tbody tr.partial:nth-child(even) { background-color: var(--yellow2) }
-
 
 footer {
   display: flex;
