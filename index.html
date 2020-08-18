@@ -54,8 +54,16 @@
     <section role="main">
       <h2>Where are we at?</h2>
       <p>
-        The following table details how far along Rust IPFS is in
-        their implementation. For other projects, see the README.md
+        The following table details how far along the ecosystem as a
+        whole is in supporting the suite of InterPlanetary File
+        System (IPFS) functionality. Note that we're using conformance
+        tests from the <a href="https://github.com/ipfs/js-ipfs/tree/master/packages/interface-ipfs-core">official suite</a>
+        as a metric, since it's the best objective measure we are aware of.
+      </p>
+      <p>
+        If you have made progress in any of the yellow or gray items
+        below, or simply want to offer a correction, please
+        <a href="https://github.com/rs-ipfs/areweipfsyet.rs/issues/new">let us know</a>.
       </p>
       <table>
         <thead>
@@ -86,12 +94,6 @@
             <td>21/21 tests passing</td>
           </tr>
           <tr class="complete">
-            <td>Bitswap</td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>9/9 tests passing</td>
-          </tr>
-          <tr class="complete">
             <td>Cat</td>
             <td>Yes</td>
             <td>Yes</td>
@@ -103,29 +105,35 @@
             <td>Yes</td>
             <td>9/9 tests passing</td>
           </tr>
-          <tr class="partial">
-            <td>Add</td>
-            <td>Single Block</td>
-            <td>Yes</td>
-            <td>9/30 tests passing</td>
-          </tr>
-          <tr class="partial">
-            <td>Pin</td>
-            <td>Yes</td>
-            <td>In PR</td>
-            <td>0/23 tests passing</td>
-          </tr>
-          <tr class="partial">
+          <tr class="complete">
             <td>Version</td>
             <td>Yes</td>
             <td>Yes</td>
             <td>1/2 tests passing</td>
           </tr>
-          <tr class="partial">
+          <tr class="complete">
             <td>ID</td>
             <td>Yes</td>
             <td>Yes</td>
             <td>1/2 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Bitswap</td>
+            <td>Partial (comparable to go-ipfs 0.4)</td>
+            <td>Yes</td>
+            <td>9/9 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Add</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>19/39 tests passing</td>
+          </tr>
+          <tr class="partial">
+            <td>Pin</td>
+            <td>Initial</td>
+            <td>No</td>
+            <td>0/23 tests passing</td>
           </tr>
           <tr class="partial">
             <td>Block</td>
@@ -148,7 +156,8 @@
       <p>
         The table below details the features that still need attention.
         This is a great opportunity for contributors who want to make
-        a difference. TODO: Wordsmith
+        a difference. See the projects list below for places to
+        contribute.
       </p>
 
       <table>
@@ -214,9 +223,32 @@
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2>Ecosystem Projects</h2>
       <ul>
-        <li>TODO: List ecosystem projects here</li>
+        <li>
+          <a href="https://github.com/rs-ipfs/rust-ipfs">rust-ipfs</a>
+          is an implementation that focuses on the suite of conformance
+          tests provided by Protocol Labs
+        </li>
+        <li>
+          <a href="#">rust-ipfs-api</a> - A HTTP client for an existing
+          go-ipfs or js-ipfs node. Supports both hyper and actix
+        </li>
+        <li>
+          <a href="#">ipfs-embed</a> - A light client implementation
+          with a <a href="https://github.com/spacejam/sled">sled</a> backend
+        </li>
+        <li>
+          <a href="#">rust-ipld</a> - Basic rust ipld library supporting
+          dag-cbor, dag-json and dag-pb formats
+        </li>
+        <li>
+          PolkaX's own <a href="#">rust-ipfs</a>
+        </li>
+        <li>
+          Parity's <a href="#">rust-libp2p</a>, which does a lot the of
+          heavy lifting here
+        </li>
       </ul>
     </section>
 
